@@ -1,0 +1,5 @@
+full_score = float(100)
+minutes_late = float(74)
+lab_score_reduced = lambda full_score, minutes_late: full_score * (1 - 0.01 * ((minutes_late + 14) // 15))
+hw_score_reduced = lambda full_score, minutes_late: full_score * (1 - 0.01 * ((minutes_late + 239) // 240))
+print("My score:", int(lab_score_reduced(full_score, minutes_late)))
